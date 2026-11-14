@@ -135,6 +135,8 @@ set_attributes:
   target:
     entity:
       - domain: light
+        integration: control4
+      - domain: light
         integration: hue
       - domain: light
         integration: zha
@@ -171,6 +173,8 @@ set_attributes:
 raise_brightness:
   target: &hue_mqtt_shelly_zha
     entity:
+      - domain: light
+        integration: control4
       - domain: light
         integration: hue
       - domain: light
@@ -263,6 +267,8 @@ stop:
 get_attributes:
   target:
     entity:
+      - domain: light
+        integration: control4
       - domain: light
         integration: hue
       - domain: [light, switch]
